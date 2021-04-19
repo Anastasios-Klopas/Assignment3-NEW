@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.css">
+    <link rel="stylesheet" href="styleNEW.css">
+    <title>Assignment</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-custom">
+        <a class="navbar-brand" href="#">
+            <div class="logo-area">
+                <img src="monkas1.png" width="30px">
+            </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="student.html">Student</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="trainer.html">Trainer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="course.html">Course</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="assignment.html">Assignment</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-1">
+                <a href="addAssignment.html" class="button1">ADD</a>
+                <a href="assignmentsPerCourse.html" class="button2">Assignments Per Course</a>
+                <a href="assignmentsPerStudentPerCourse.html" class="button3">Assignments Per Student Per Course</a>
+            </div>
+            <div class="col-sm-11">
+                <h1 class="mt-5">Assignments</h1>
+                <table class="table" border="1">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th>Title</th>
+                            <th>Description</th>
+                            <th>Sub Date Time</th>
+                            <th>Oral Mark</th>
+                            <th>Total Mark</th>
+                            <th colspan="3">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Individual Project</td>
+                            <td>Calculator</td>
+                            <td>03-11-2020</td>
+                            <td>80</td>
+                            <td>50</td>
+                            <td><a href="updateAssignment.html" class="button">UPDATE</a></td>
+                            <td><a href="editAssignment.html" class="button">EDIT</a></td>
+                            <td><a href="#" class="deleteLink">DELETE</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Project 1</td>
+                            <td>Cinema</td>
+                            <td>03-12-2020</td>
+                            <td>90</td>
+                            <td>60</td>
+                            <td><a href="updateAssignment.html" class="button">UPDATE</a></td>
+                            <td><a href="editAssignment.html" class="button">EDIT</a></td>
+                            <td> <a href="#" class="deleteLink">DELETE</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Project 2</td>
+                            <td>School</td>
+                            <td>03-11-2021</td>
+                            <td>50</td>
+                            <td>90</td>
+                            <td><a href="updateAssignment.html" class="button">UPDATE</a></td>
+                            <td><a href="editAssignment.html" class="button">EDIT</a></td>
+                            <td> <a href="#" class="deleteLink">DELETE</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Individual Project 2</td>
+                            <td>E-Shop</td>
+                            <td>12-12-2020</td>
+                            <td>70</td>
+                            <td>40</td>
+                            <td><a href="updateAssignment.html" class="button">UPDATE</a></td>
+                            <td><a href="editAssignment.html" class="button">EDIT</a></td>
+                            <td> <a href="#" class="deleteLink">DELETE</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Project 3</td>
+                            <td>Cinema</td>
+                            <td>18-09-2020</td>
+                            <td>40</td>
+                            <td>80</td>
+                            <td><a href="updateAssignment.html" class="button">UPDATE</a></td>
+                            <td><a href="editAssignment.html" class="button">EDIT</a></td>
+                            <td> <a href="#" class="deleteLink">DELETE</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>Individual Project 3</td>
+                            <td>Tetris</td>
+                            <td>29-08-2020</td>
+                            <td>60</td>
+                            <td>90</td>
+                            <td><a href="updateAssignment.html" class="button">UPDATE</a></td>
+                            <td><a href="editAssignment.html" class="button">EDIT</a></td>
+                            <td> <a href="#" class="deleteLink">DELETE</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        &copy; Copyright by Kappa 2020
+    </footer>
+
+    <!-- /Jquery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <!-- Bootstrap javascript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Toastr.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+    <script src="scriptDelete.js"></script>
+</body>
+
+</html>
+
+</tr>
+<tr>
+
+</tr>
+<tr>
+
+</tr>
+<tr>
+
+</tr>
+<tr>
+
+</tr>
+<tr>
+
+</tr>
+<tr>

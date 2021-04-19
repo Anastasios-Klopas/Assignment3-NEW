@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.css">
+    <link rel="stylesheet" href="styleNEW.css">
+    <link rel="stylesheet" href="styleFormNew.css">
+    <title>Add</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-custom">
+        <a class="navbar-brand" href="#">
+            <div class="logo-area">
+                <img src="monkas1.png" width="30px">
+            </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="student.html">Student</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="trainer.html">Trainer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="course.html">Course</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="assignment.html">Assignment</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <h1 class="mt-5">Add Student</h1>
+                <hr>
+                <div class="main-content">
+                    <div class="error" id="emptyInputs"></div>
+                    <form action="/successfull.html" id="myFormStudent" novalidate>
+
+                        <div class="error" id="firstNameValidation"></div>
+                        <label for="firstName">First Name:</label>
+                        <input pattern="" type="text" name="firstName" id="firstName" />
+
+                        <div class="error" id="lastNameValidation"></div>
+                        <label for="lastName">Last Name:</label>
+                        <input pattern="" type="text" name="lastName" id="lastName" />
+
+                        <div class="error" id="dateOfBirthValidation"></div>
+                        <label for="dateOfBirth">Date Of Birth:</label>
+                        <input type="date" name="dateOfBirth" id="dateOfBirth" />
+
+
+                        <div class="error" id="tuitionFeeValidation"></div>
+                        <label for="tuitionFee">Tuition Fee:</label>
+                        <input pattern="" type="text" name="tuitionFee" id="tuitionFee" />
+
+                        <button id="submit" type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        &copy; Copyright by Kappa 2020
+    </footer>
+
+    <!-- /Jquery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <!-- Bootstrap javascript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Toastr.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+    <script src="scriptStudent.js"></script>
+</body>
+
+</html>

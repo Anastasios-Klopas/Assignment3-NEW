@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.css">
+    <link rel="stylesheet" href="styleNEW.css">
+    <title>Students Per Course</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-custom">
+        <a class="navbar-brand" href="#">
+            <div class="logo-area">
+                <img src="monkas1.png" width="30px">
+            </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="student.html">Student</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="trainer.html">Trainer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="course.html">Course</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="assignment.html">Assignment</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-1">
+                <a href="addStudentsPerCourse.html" class="button1">ADD</a>
+            </div>
+            <div class="col-sm-11">
+                <h1 class="mt-5">Students Per Course</h1>
+                <table class="table" border="1">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Course Title</th>
+                            <th>Course Stream</th>
+                            <th>Course Type</th>
+                            <th colspan="3">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Stauros</td>
+                            <td>Stauraras</td>
+                            <td rowspan="2">CB2</td>
+                            <td rowspan="2">C#</td>
+                            <td rowspan="2">Part Time</td>
+                            <td rowspan="2"><a href="updateStudentsPerCourse.html" class="button">UPDATE</a></td>
+                            <td rowspan="2"><a href="editStudentsPerCourse.html" class="button">EDIT</a></td>
+                            <td rowspan="2"><a href="#" class="deleteLink">DELETE</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Stella</td>
+                            <td>Stellitsa</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Sos</td>
+                            <td>Sap</td>
+                            <td rowspan="2">CB1</td>
+                            <td rowspan="2">C#</td>
+                            <td rowspan="2">Full Time</td>
+                            <td rowspan="2"><a href="updateStudentsPerCourse.html" class="button">UPDATE</a></td>
+                            <td rowspan="2"><a href="editStudentsPerCourse.html" class="button">EDIT</a></td>
+                            <td rowspan="2"><a href="#" class="deleteLink">DELETE</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Antrianna</td>
+                            <td>Antriannoula</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Giannhs</td>
+                            <td>Giannakhs</td>
+                            <td rowspan="2">CB3</td>
+                            <td rowspan="2">Java</td>
+                            <td rowspan="2">Full Time</td>
+                            <td rowspan="2"><a href="updateStudentsPerCourse.html" class="button">UPDATE</a></td>
+                            <td rowspan="2"><a href="editStudentsPerCourse.html" class="button">EDIT</a></td>
+                            <td rowspan="2"><a href="#" class="deleteLink">DELETE</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>Giwta</td>
+                            <td>Giwtoula</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">7</th>
+                            <td>Giwrgos</td>
+                            <td>Giwrgakhs</td>
+                            <td rowspan="2">CB4</td>
+                            <td rowspan="2">Java</td>
+                            <td rowspan="2">Part Time</td>
+                            <td rowspan="2"><a href="updateStudentsPerCourse.html" class="button">UPDATE</a></td>
+                            <td rowspan="2"><a href="editStudentsPerCourse.html" class="button">EDIT</a></td>
+                            <td rowspan="2"><a href="#" class="deleteLink">DELETE</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">8</th>
+                            <td>Elenh</td>
+                            <td>Elenitsa</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        &copy; Copyright by Kappa 2020
+    </footer>
+
+    <!-- /Jquery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <!-- Bootstrap javascript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Toastr.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+    <script src="scriptDelete.js"></script>
+</body>
+
+</html>

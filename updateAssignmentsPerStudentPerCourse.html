@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.css">
+    <link rel="stylesheet" href="styleNEW.css">
+    <link rel="stylesheet" href="styleFormNew.css">
+    <title>Update</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-custom">
+        <a class="navbar-brand" href="#">
+            <div class="logo-area">
+                <img src="monkas1.png" width="30px">
+            </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="student.html">Student</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="trainer.html">Trainer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="course.html">Course</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="assignment.html">Assignment</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <h1 class="mt-5">Update Assignments Per Student Per Course</h1>
+                <hr>
+                <div class="main-content">
+                    <div class="error" id="emptyInputs"></div>
+
+                    <form action="/successfull.html" id="myFormMultyPerCourse" novalidate>
+
+                        <div class="error" id="multyValidation"></div>
+                        <div class="error" id="multyValidation1"></div>
+                        <label for="multy">Choose multy Assignments:</label>
+                        <select name="multy" id="multy" multiple>
+                            <option value="multy0">---Select---</option>
+                            <option value="multy1">Project 1 Calculator</option>
+                            <option value="multy2">Project 2 School</option>
+                            <option value="multy3">Project 3 Cinema</option>
+                            <option value="multy4" selected>Project 4 Skroutz</option>
+                        </select>
+
+                        <div class="error" id="studentValidation"></div>
+                        <div class="error" id="studentValidation1"></div>
+                        <label for="student">Choose one Student:</label>
+                        <select name="student" id="student">
+                            <option value="student0">---Select---</option>
+                            <option value="student1">Sos Sap</option>
+                            <option value="student2">Stauros Stauras</option>
+                            <option value="student3">Antrianna Antrianoula</option>
+                            <option value="student4" selected>Kwstas Kwstakhs</option>
+                        </select>
+
+                        <br><br>
+
+                        <div class="error" id="courseValidation"></div>
+                        <div class="error" id="courseValidation1"></div>
+                        <label for="course">Choose one Course:</label>
+                        <select name="course" id="course">
+                            <option value="course0">---Select---</option>
+                            <option value="course1">CB1 C# Full Time</option>
+                            <option value="course2">CB1 C# Part Time</option>
+                            <option value="course3">CB2 Java Full Time</option>
+                            <option value="course4" selected>CB2 Java Part Time</option>
+                        </select>
+                        <br>
+                        <!--<p>Hold down the Ctrl (windows) or Command (Mac) button to select multiple options.</p>-->
+                        <br>
+                        <button id="submit" type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        &copy; Copyright by Kappa 2020
+    </footer>
+
+    <!-- /Jquery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <!-- Bootstrap javascript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Toastr.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+    <script src="scriptAssignmentsPerStudentPerCourseUpdate.js"></script>
+</body>
+
+</html>
